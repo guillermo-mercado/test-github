@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- HTML Forms <form>:
+
+        - Used to contain different input elements such as text fields, checkboxes and submit buttons etc.
+        - Opened with a <form> tag.  -->
+
+    <!-- Action attribute allows us to determine how our form information is processed
+        upon submition. As we are currently just structuring our forms we will just pass a hash
+        symbol for now as a placeholder. However, further down the line when we work with JavaScript we
+        will work with handling form data   -->
+
+    <form action="./confirmation.html">
+
+        <!--
+        HTML Forms <label>:
+    
+        - Defines a label for form elements.
+        - The "for" attribute should match the "id" attribute of the relevant <input> element to bind them together.
+
+        List of form label types:
+
+        - https://www.w3schools.com/tags/tag_label.asp
+         -->
+
+        <label for="fname">First Name:</label>
+        <input id="fname" type="text" placeholder="First Name..." required>
+        <br>
+        <!-- <br> - Line Break - Creates vertical gap between elements -->
+        <br>
+        <label for="lname">Last Name:</label>
+        <input id="lname" type="text" placeholder="Last Name..." required>
+        <br>
+        <br>
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" maxlength="12" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="email@email.com" required>
+        <br>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="tel" placeholder="(07)1-234-56789">
+        <br>
+        <br>
+        <label for="dob">DOB:</label>
+        <input id="dob" type="date">
+        <br>
+        <br>
+        <input type="reset" value="Clear">
+        <br>
+        <br>
+        <input type="submit" value="Sign-Up">
+    </form>
+</body>
+
+</html>
